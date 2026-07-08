@@ -15,15 +15,30 @@ export function AboutSection() {
       </p>
 
       <h2 className="mt-4 max-w-4xl text-4xl font-bold tracking-tight sm:text-5xl">
-        I&apos;m building the habits, projects, and engineering mindset needed
-        to become a strong software engineer.
+        I didn't take the traditional path into software engineering—and that's
+        become one of my biggest strengths.
       </h2>
 
+      <p className="mt-8 max-w-3xl text-lg leading-8 text-slate-300">
+        After serving in the U.S. Navy, I returned to school determined to build
+        a career creating software that people genuinely enjoy using. Today I'm
+        completing my Computer Science degree at George Mason University while
+        continuously building projects that challenge me to become a better
+        engineer.
+      </p>
+
       <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-        My background combines military experience, computer science education,
-        and hands-on software projects. I care deeply about writing clean code,
-        building polished user experiences, solving real problems, and
-        continuously improving as an engineer.
+        I'm especially interested in clean code, thoughtful user experiences,
+        accessibility, responsive design, and writing software that's both
+        maintainable and practical. Every project in this portfolio represents a
+        new skill learned, a problem solved, or a challenge that pushed me
+        forward.
+      </p>
+
+      <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+        My goal isn't simply to land my first software engineering job; it's to
+        become the kind of engineer teammates enjoy working with and users trust
+        to build reliable products.
       </p>
     </motion.section>
   )
