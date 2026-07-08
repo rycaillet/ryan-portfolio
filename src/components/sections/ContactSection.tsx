@@ -16,7 +16,7 @@ export function ContactSection() {
         </p>
 
         <h2 className="mt-4 max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl">
-          Let&apos;s build something worth talking about.
+            Interested in working together?
         </h2>
 
         <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">

@@ -8,6 +8,7 @@ import { ProjectsSection } from './components/sections/ProjectsSection'
 import { ScrollProgress } from './components/ui/ScrollProgress'
 import { EngineeringPhilosophy } from './components/sections/EngineeringPhilosophy'
 import { SkillsSection } from './components/sections/SkillsSection'
+import { Footer } from './components/layout/Footer'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <SkillsSection />
       <ProjectsSection />
       <ContactSection />
+      <Footer />
     </main>
   )
 }
