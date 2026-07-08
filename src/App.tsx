@@ -6,6 +6,7 @@ import { ImpactStats } from './components/sections/ImpactStats'
 import { JourneyTimeline } from './components/sections/JourneyTimeline'
 import { ProjectsSection } from './components/sections/ProjectsSection'
 import { ScrollProgress } from './components/ui/ScrollProgress'
+import { EngineeringPhilosophy } from './components/sections/EngineeringPhilosophy'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <AboutSection />
       <ImpactStats />
       <JourneyTimeline />
+      <EngineeringPhilosophy />
       <ProjectsSection />
       <ContactSection />
     </main>
