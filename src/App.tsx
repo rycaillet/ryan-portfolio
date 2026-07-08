@@ -7,6 +7,7 @@ import { JourneyTimeline } from './components/sections/JourneyTimeline'
 import { ProjectsSection } from './components/sections/ProjectsSection'
 import { ScrollProgress } from './components/ui/ScrollProgress'
 import { EngineeringPhilosophy } from './components/sections/EngineeringPhilosophy'
+import { SkillsSection } from './components/sections/SkillsSection'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <ImpactStats />
       <JourneyTimeline />
       <EngineeringPhilosophy />
+      <SkillsSection />
       <ProjectsSection />
       <ContactSection />
     </main>
