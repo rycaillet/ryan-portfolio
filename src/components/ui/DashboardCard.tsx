@@ -83,8 +83,7 @@ export function DashboardCard() {
           </h2>
 
           <p className="mt-3 text-sm leading-7 text-slate-300 sm:text-base">
-            I am focused on building maintainable software while growing across
-            frontend, full stack development, testing, and software design.
+            I specialize in engineering maintainable software solutions, with a strong focus on advancing my skills in frontend and full-stack development, testing, and software design.
           </p>
 
           <div className="mt-6 grid gap-3 sm:grid-cols-3">
