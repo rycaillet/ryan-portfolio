@@ -122,7 +122,7 @@ export function DashboardCard() {
             <p className="text-sm font-medium text-slate-200">Current goal</p>
 
             <p className="mt-1 text-sm leading-6 text-slate-400">
-              Build polished projects that show clean architecture, thoughtful
+              Build polished projects that demonstrates clean architecture, thoughtful
               user experience, and real software engineering growth.
             </p>
           </div>
