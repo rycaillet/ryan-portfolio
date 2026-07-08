@@ -1,11 +1,11 @@
 export function Navbar() {
   return (
-    <nav className="mx-auto flex max-w-7xl items-center justify-between rounded-full border border-white/10 bg-white/5 px-5 py-3 backdrop-blur">
-      <a href="#" className="font-semibold tracking-tight">
+    <nav className="sticky top-6 z-50 mx-auto flex max-w-7xl flex-col gap-4 rounded-3xl border border-white/10 bg-white/5 px-5 py-4 backdrop-blur sm:flex-row sm:items-center sm:justify-between sm:rounded-full">
+      <a href="#" className="text-lg font-semibold tracking-tight">
         Ryan Caillet
       </a>
 
-      <div className="hidden items-center gap-6 text-sm text-slate-300 md:flex">
+      <div className="flex items-center gap-5 text-sm text-slate-300">
         <a href="#about" className="transition hover:text-cyan-300">
           About
         </a>
