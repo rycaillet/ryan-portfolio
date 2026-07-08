@@ -1,23 +1,35 @@
 import { motion } from 'framer-motion'
 
-const metrics = [
-  { label: 'Portfolio build', value: 'Live' },
-  { label: 'Accessibility', value: 'A11y' },
-  { label: 'Mobile first', value: 'Ready' },
+const profileStats = [
+  { label: 'Status', value: 'Active' },
+  { label: 'Available', value: 'Dec 2026' },
+  { label: 'Location', value: 'Northern VA' },
 ]
 
-const skills = ['React', 'TypeScript', 'Tailwind', 'Git', 'Testing', 'UX']
+const focusAreas = ['Frontend', 'Full Stack', 'Clean Code', 'Testing', 'UX']
 
 const floatingChips = [
-  { label: 'React', className: '-left-8 top-12 text-cyan-200 bg-cyan-300/10 border-cyan-300/20' },
-  { label: 'TypeScript', className: '-right-6 top-28 text-purple-200 bg-purple-300/10 border-purple-300/20' },
-  { label: 'Accessible UI', className: 'bottom-0 left-10 text-emerald-200 bg-emerald-300/10 border-emerald-300/20' },
+  {
+    label: 'Problem Solver',
+    className:
+      'left-6 top-0 text-cyan-200 bg-cyan-300/10 border-cyan-300/20 lg:left-8 lg:top-0',
+  },
+  {
+    label: 'User Focused',
+    className:
+      'right-6 top-0 text-purple-200 bg-purple-300/10 border-purple-300/20 lg:right-8 lg:top-0',
+  },
+  {
+    label: 'Always Learning',
+    className:
+      'bottom-2 left-8 text-emerald-200 bg-emerald-300/10 border-emerald-300/20 lg:-bottom-4 lg:left-10',
+  },
 ]
 
 export function DashboardCard() {
   return (
     <motion.div
-      className="relative"
+      className="relative pt-12"
       initial={{ opacity: 0, scale: 0.96, y: 24 }}
       animate={{ opacity: 1, scale: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 0.2 }}
@@ -32,7 +44,7 @@ export function DashboardCard() {
         <motion.div
           key={chip.label}
           className={`absolute z-20 rounded-full border px-3 py-1.5 text-xs shadow-xl backdrop-blur sm:px-4 sm:py-2 sm:text-sm ${chip.className}`}
-          animate={{ y: [0, -12, 0] }}
+          animate={{ y: [0, -8, 0] }}
           transition={{
             duration: 3 + index,
             repeat: Infinity,
@@ -44,56 +56,75 @@ export function DashboardCard() {
       ))}
 
       <motion.div
-        className="relative rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-2xl backdrop-blur"
+        className="relative rounded-[2rem] border border-white/10 bg-white/5 p-5 shadow-2xl backdrop-blur sm:p-6"
         animate={{ y: [0, -8, 0] }}
         transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
       >
-        <div className="rounded-[1.5rem] border border-cyan-300/20 bg-slate-950/85 p-5">
-          <div className="flex items-center justify-between">
-            <p className="text-sm text-cyan-300">RyanOS Dashboard</p>
-            <span className="rounded-full bg-emerald-400/10 px-3 py-1 text-xs font-semibold text-emerald-300">
-              Online
+        <div className="rounded-[1.5rem] border border-cyan-300/20 bg-slate-950/85 p-5 sm:p-6">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <p className="text-sm font-semibold text-cyan-300">
+                Engineering Snapshot
+              </p>
+
+              <p className="mt-1 max-w-md text-xs leading-5 text-slate-500">
+                A quick look at what I am building toward as a software
+                engineer.
+              </p>
+            </div>
+
+            <span className="w-fit rounded-full bg-emerald-400/10 px-3 py-1 text-xs font-semibold text-emerald-300">
+              Open
             </span>
           </div>
 
-          <h2 className="mt-5 text-2xl font-bold">
-            Building recruiter-ready software
+          <h2 className="mt-5 text-2xl font-bold leading-tight">
+            Building useful software with discipline, curiosity, and purpose.
           </h2>
 
-          <p className="mt-3 text-slate-300">
-            A personal engineering platform designed to showcase clean code,
-            strong UX, accessibility, and project-level thinking.
+          <p className="mt-3 text-sm leading-7 text-slate-300 sm:text-base">
+            I am focused on building maintainable software while growing across
+            frontend, full stack development, testing, and software design.
           </p>
 
           <div className="mt-6 grid gap-3 sm:grid-cols-3">
-            {metrics.map((metric) => (
-              <div key={metric.label} className="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
-                <p className="text-xs text-slate-400">{metric.label}</p>
-                <p className="mt-2 font-semibold text-slate-100">{metric.value}</p>
+            {profileStats.map((stat) => (
+              <div
+                key={stat.label}
+                className="rounded-2xl border border-white/10 bg-white/[0.04] p-4"
+              >
+                <p className="text-xs text-slate-400">{stat.label}</p>
+
+                <p className="mt-2 font-semibold text-slate-100">
+                  {stat.value}
+                </p>
               </div>
             ))}
           </div>
 
           <div className="mt-6">
             <p className="text-xs uppercase tracking-[0.25em] text-slate-500">
-              Core stack
+              Current focus
             </p>
 
             <div className="mt-3 flex flex-wrap gap-2">
-              {skills.map((skill) => (
-                <span key={skill} className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-sm text-slate-200">
-                  {skill}
+              {focusAreas.map((area) => (
+                <span
+                  key={area}
+                  className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-sm text-slate-200"
+                >
+                  {area}
                 </span>
               ))}
             </div>
           </div>
 
           <div className="mt-6 rounded-2xl border border-white/10 bg-gradient-to-r from-cyan-400/10 to-purple-400/10 p-4">
-            <p className="text-sm font-medium text-slate-200">
-              Current milestone
-            </p>
-            <p className="mt-1 text-sm text-slate-400">
-              Designing and building the portfolio foundation.
+            <p className="text-sm font-medium text-slate-200">Current goal</p>
+
+            <p className="mt-1 text-sm leading-6 text-slate-400">
+              Build polished projects that show clean architecture, thoughtful
+              user experience, and real software engineering growth.
             </p>
           </div>
         </div>

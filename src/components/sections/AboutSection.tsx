@@ -15,8 +15,7 @@ export function AboutSection() {
       </p>
 
       <h2 className="mt-4 max-w-4xl text-4xl font-bold tracking-tight sm:text-5xl">
-        I didn't take the traditional path into software engineering—and that's
-        become one of my biggest strengths.
+        I didn't take the traditional path into software engineering, and that's become one of my biggest strengths.
       </h2>
 
       <p className="mt-8 max-w-3xl text-lg leading-8 text-slate-300">
